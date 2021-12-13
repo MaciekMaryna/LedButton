@@ -1422,7 +1422,7 @@ int main(void)
 	  HardwareUpdate();
  8000b28:	f7ff ff2e 	bl	8000988 <HardwareUpdate>
 
-//******************* Counting *******************
+//******************* Counting *******************//
 	  if ((!BlueButton.PrevStatus) && (BlueButton.Status)) BlueButton.WhenOn=Tick;
  8000b2c:	4b5e      	ldr	r3, [pc, #376]	; (8000ca8 <main+0x1c4>)
  8000b2e:	7a5b      	ldrb	r3, [r3, #9]
@@ -1517,7 +1517,7 @@ int main(void)
  8000bca:	729a      	strb	r2, [r3, #10]
 	  }
 
-//******************* Blinking *******************
+//******************* Blinking *******************//
 	  if (((Tick-BlueButton.WhenOff)>AFTER_PUSH_TIME) && (BlueButton.Count) && (!BlueButton.Status) && (!BlueButton.PrevStatus))
  8000bcc:	4b37      	ldr	r3, [pc, #220]	; (8000cac <main+0x1c8>)
  8000bce:	681a      	ldr	r2, [r3, #0]

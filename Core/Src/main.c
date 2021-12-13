@@ -196,7 +196,7 @@ int main(void)
 
 	  HardwareUpdate();
 
-//******************* Counting *******************
+//******************* Counting *******************//
 	  if ((!BlueButton.PrevStatus) && (BlueButton.Status)) BlueButton.WhenOn=Tick;
 	  if ((BlueButton.PrevStatus) && (!BlueButton.Status)) BlueButton.WhenOff=Tick;
 
@@ -212,7 +212,7 @@ int main(void)
 	  	  BlueButton.Temp=0;
 	  }
 
-//******************* Blinking *******************
+//******************* Blinking *******************//
 	  if (((Tick-BlueButton.WhenOff)>AFTER_PUSH_TIME) && (BlueButton.Count) && (!BlueButton.Status) && (!BlueButton.PrevStatus))
 	  {
 		  BlueButton.UnLock=0;
